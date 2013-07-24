@@ -7,7 +7,7 @@ public class ShootTurret : MonoBehaviour {
 	public Rigidbody bulletPrefab;
     public Transform barrelEndLeft;
     public Transform barrelEndRight;
-	public float attackspeed = 0.25f;
+	public float attackspeed = 0.50f;
 	public float timer = 0f;
 	
 	// Use this for initialization
@@ -37,9 +37,9 @@ public class ShootTurret : MonoBehaviour {
             
 		Rigidbody bulletInstance;
         bulletInstance = Instantiate(bulletPrefab, barrelEndLeft.position, barrelEndLeft.rotation) as Rigidbody;
-        bulletInstance.AddForce(barrelEndLeft.up * 10000);
+        bulletInstance.AddForce(barrelEndLeft.up * 5000);
 		bulletInstance = Instantiate(bulletPrefab, barrelEndRight.position, barrelEndRight.rotation) as Rigidbody;
-        bulletInstance.AddForce(barrelEndRight.up * 10000);
+        bulletInstance.AddForce(barrelEndRight.up * 5000);
 		
 		
 	}

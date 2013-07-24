@@ -3,7 +3,7 @@ using System.Collections;
 
 public class BasicShipStats : MonoBehaviour {
 	
-	private float health = 10;
+	private float health = 4;
 	private float armor = 0;
 	
 	public float getHealth(){
