@@ -57,6 +57,7 @@
      <Compile Include="Assets\Scripts\MoveTurret.cs" />
      <Compile Include="Assets\Scripts\Moveforward.cs" />
      <Compile Include="Assets\Scripts\RefilAmmo.cs" />
+     <Compile Include="Assets\Scripts\ShootAtPlayer.cs" />
      <Compile Include="Assets\Scripts\ShootTurret.cs" />
      <Compile Include="Assets\Scripts\TargetMouse.cs" />
      <Compile Include="Assets\Scripts\ThirdPerson.cs" />
