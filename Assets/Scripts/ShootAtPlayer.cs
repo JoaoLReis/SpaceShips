@@ -12,13 +12,13 @@ public class ShootAtPlayer : MonoBehaviour {
 	private Quaternion turretrotationleft;
 	public GameObject player;
 	private Transform playerlocal;
-	
+	private Vector3 upvector;
 	// Use this for initialization
 	void Start () {
-		
+		upvector = new Vector3(0,1,0);
 		playerlocal = player.GetComponent<Transform>();
-		barrelEndLeft.LookAt(playerlocal);
-		barrelEndRight.LookAt(playerlocal);
+		barrelEndLeft.LookAt(playerlocal, upvector);
+		barrelEndRight.LookAt(playerlocal, upvector);
 		
 	}
 	
@@ -42,12 +42,12 @@ public class ShootAtPlayer : MonoBehaviour {
 	}
 	
 	void FireWeapon(){
-        barrelEndLeft.LookAt(playerlocal);
-		barrelEndRight.LookAt(playerlocal);
-		barrelEndLeft.RotateAround (barrelEndLeft.position, Vector3.right, 90);  
-		barrelEndRight.RotateAround (barrelEndRight.position, Vector3.right, 90);  
-		barrelEndLeft.RotateAround (barrelEndLeft.position, Vector3.up, 180);  
-		barrelEndRight.RotateAround (barrelEndRight.position, Vector3.up, 180);    
+        barrelEndLeft.LookAt(playerlocal, upvector);
+		barrelEndRight.LookAt(playerlocal, upvector);
+		//barrelEndLeft.RotateAround (barrelEndLeft.position, Vector3.right, 180);  
+		//barrelEndRight.RotateAround (barrelEndRight.position, Vector3.right, 180);  
+		//barrelEndLeft.RotateAround (barrelEndLeft.position, Vector3.up, 180);  
+		//barrelEndRight.RotateAround (barrelEndRight.position, Vector3.up, 180);    
 		
 		Rigidbody bulletInstance;
         bulletInstance = Instantiate(bulletPrefab, barrelEndLeft.position, barrelEndLeft.rotation) as Rigidbody;

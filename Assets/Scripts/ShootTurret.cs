@@ -37,9 +37,9 @@ public class ShootTurret : MonoBehaviour {
             
 		Rigidbody bulletInstance;
         bulletInstance = Instantiate(bulletPrefab, barrelEndLeft.position, barrelEndLeft.rotation) as Rigidbody;
-        bulletInstance.AddForce(barrelEndLeft.up * 5000);
+        bulletInstance.AddForce(barrelEndLeft.forward * 5000);
 		bulletInstance = Instantiate(bulletPrefab, barrelEndRight.position, barrelEndRight.rotation) as Rigidbody;
-        bulletInstance.AddForce(barrelEndRight.up * 5000);
+        bulletInstance.AddForce(barrelEndRight.forward * 5000);
 		
 		
 	}
