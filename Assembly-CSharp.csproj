@@ -44,6 +44,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\BasicShipMovement.cs" />
      <Compile Include="Assets\BasicShipStats.cs" />
      <Compile Include="Assets\BulletStats.cs" />
      <Compile Include="Assets\ProjectileHit.cs" />
@@ -62,6 +63,7 @@
      <Compile Include="Assets\Scripts\TargetMouse.cs" />
      <Compile Include="Assets\Scripts\ThirdPerson.cs" />
      <Compile Include="Assets\SetupGame.cs" />
+     <Compile Include="Assets\ShootBasicShipTurret.cs" />
      <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
      <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
   </ItemGroup>

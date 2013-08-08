@@ -5,7 +5,7 @@ public class DestructionClones : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		Destroy (gameObject, 5f);
+		Destroy (gameObject, 8f);
 	}
 	
 	
