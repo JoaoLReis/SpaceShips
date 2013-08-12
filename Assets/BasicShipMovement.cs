@@ -5,7 +5,7 @@ public class BasicShipMovement : MonoBehaviour {
 
 
 	public float movement = 50f;
-	public float rotationspeed = 0.1f;
+	public float rotationspeed = 0.025f;
 	private Vector3 destination;
 	public float moveDirection;
 	private Vector3 newrotation;

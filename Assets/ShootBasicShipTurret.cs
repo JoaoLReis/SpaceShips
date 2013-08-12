@@ -6,7 +6,7 @@ public class ShootBasicShipTurret : MonoBehaviour {
 	public Rigidbody bulletPrefab;
     public Transform barrelEndLeft;
     public Transform barrelEndRight;
-	public float attackspeed = 1.00f;
+	public float attackspeed = 1.50f;
 	public float timer = 0f;
 	
 	// Use this for initialization
