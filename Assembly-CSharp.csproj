@@ -44,13 +44,13 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\AdvanceLevel.cs" />
-     <Compile Include="Assets\BasicShipMovement.cs" />
-     <Compile Include="Assets\BasicShipStats.cs" />
-     <Compile Include="Assets\BulletStats.cs" />
-     <Compile Include="Assets\ProjectileHit.cs" />
      <Compile Include="Assets\Scripts\Actions.cs" />
+     <Compile Include="Assets\Scripts\AdvanceLevel.cs" />
      <Compile Include="Assets\Scripts\AmmoChange.cs" />
+     <Compile Include="Assets\Scripts\BasicEnemyLaser.cs" />
+     <Compile Include="Assets\Scripts\BasicShipMovement.cs" />
+     <Compile Include="Assets\Scripts\BasicShipStats.cs" />
+     <Compile Include="Assets\Scripts\BulletStats.cs" />
      <Compile Include="Assets\Scripts\CursorChange.cs" />
      <Compile Include="Assets\Scripts\DestructionClones.cs" />
      <Compile Include="Assets\Scripts\HealthChange.cs" />
@@ -58,14 +58,17 @@
      <Compile Include="Assets\Scripts\MoveAround.cs" />
      <Compile Include="Assets\Scripts\MoveTurret.cs" />
      <Compile Include="Assets\Scripts\Moveforward.cs" />
+     <Compile Include="Assets\Scripts\PlayerLaser.cs" />
+     <Compile Include="Assets\Scripts\ProjectileHit.cs" />
      <Compile Include="Assets\Scripts\RefilAmmo.cs" />
+     <Compile Include="Assets\Scripts\SetupGame.cs" />
+     <Compile Include="Assets\Scripts\ShipStats.cs" />
      <Compile Include="Assets\Scripts\ShootAtPlayer.cs" />
+     <Compile Include="Assets\Scripts\ShootBasicShipTurret.cs" />
      <Compile Include="Assets\Scripts\ShootTurret.cs" />
+     <Compile Include="Assets\Scripts\SpawnBasicShip.cs" />
      <Compile Include="Assets\Scripts\TargetMouse.cs" />
      <Compile Include="Assets\Scripts\ThirdPerson.cs" />
-     <Compile Include="Assets\SetupGame.cs" />
-     <Compile Include="Assets\ShootBasicShipTurret.cs" />
-     <Compile Include="Assets\SpawnBasicShip.cs" />
      <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
      <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
   </ItemGroup>
