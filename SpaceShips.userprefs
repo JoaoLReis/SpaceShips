@@ -1,6 +1,15 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Moveforward.cs">
+    <Files>
+      <File FileName="Assets\Scripts\Moveforward.cs" Line="11" Column="88" />
+      <File FileName="Assets\Scripts\ShootBasicShipTurret.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\ShipStats.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\BulletStats.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\ProjectileHit.cs" Line="1" Column="1" />
+      <File FileName="Assets\PlayerMovement.cs" Line="27" Column="14" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
