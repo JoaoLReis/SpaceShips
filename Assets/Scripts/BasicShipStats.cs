@@ -10,8 +10,5 @@ public class BasicShipStats : ShipStats {
 	
 	public override void decreaseHealth(float damage){
 		health -= damage;
-		if(health <= 0){
-			Destroy (gameObject);
-		}
 	}
 }

@@ -44,7 +44,6 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\LookAtPlayer.cs" />
      <Compile Include="Assets\Scripts\Actions.cs" />
      <Compile Include="Assets\Scripts\AdvanceLevel.cs" />
      <Compile Include="Assets\Scripts\AmmoChange.cs" />
@@ -54,14 +53,20 @@
      <Compile Include="Assets\Scripts\BulletStats.cs" />
      <Compile Include="Assets\Scripts\CursorChange.cs" />
      <Compile Include="Assets\Scripts\DeleteUnwantedGameObjects.cs" />
+     <Compile Include="Assets\Scripts\DestroyPlayer.cs" />
+     <Compile Include="Assets\Scripts\DestroyShip.cs" />
      <Compile Include="Assets\Scripts\DestructionClones.cs" />
+     <Compile Include="Assets\Scripts\EnemyProjectileHit.cs" />
      <Compile Include="Assets\Scripts\HealthChange.cs" />
      <Compile Include="Assets\Scripts\Inventory.cs" />
+     <Compile Include="Assets\Scripts\LookAtPlayer.cs" />
      <Compile Include="Assets\Scripts\MoveAround.cs" />
      <Compile Include="Assets\Scripts\MoveTurret.cs" />
      <Compile Include="Assets\Scripts\Moveforward.cs" />
+     <Compile Include="Assets\Scripts\PlayerInventory.cs" />
      <Compile Include="Assets\Scripts\PlayerLaser.cs" />
      <Compile Include="Assets\Scripts\PlayerMovement.cs" />
+     <Compile Include="Assets\Scripts\PlayerShipStats.cs" />
      <Compile Include="Assets\Scripts\ProjectileHit.cs" />
      <Compile Include="Assets\Scripts\RefilAmmo.cs" />
      <Compile Include="Assets\Scripts\SecondShipStats.cs" />
@@ -74,7 +79,7 @@
      <Compile Include="Assets\Scripts\SpawnEnemy.cs" />
      <Compile Include="Assets\Scripts\TargetMouse.cs" />
      <Compile Include="Assets\Scripts\ThirdPerson.cs" />
-     <Compile Include="Assets\ThreeRoundBurst.cs" />
+     <Compile Include="Assets\Scripts\ThreeRoundBurst.cs" />
      <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
      <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
   </ItemGroup>

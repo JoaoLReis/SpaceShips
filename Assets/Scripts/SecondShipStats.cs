@@ -9,10 +9,6 @@ public class SecondShipStats : ShipStats {
 	}
 	
 	public override void decreaseHealth(float damage){
-		Debug.Log("Decrease" + health);
 		health -= damage;
-		if(health <= 0){
-			Destroy (gameObject);
-		}
 	}
 }

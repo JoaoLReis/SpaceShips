@@ -1,17 +1,17 @@
 using UnityEngine;
 using System.Collections;
 
-public class ProjectileHit : MonoBehaviour {
-	
+public class EnemyProjectileHit : MonoBehaviour {
+
 	private BulletStats bulletstats;
-	private ShipStats shipstats;
+	private PlayerShipStats shipstats;
 	
 	void OnTriggerEnter (Collider other) {
 		Debug.Log("Collide");
-		if(other.CompareTag("Enemy")){
-			Debug.Log ("Enemy");
+		if(other.CompareTag("Player")){
+			Debug.Log ("Player");
 			bulletstats = GetComponent<BulletStats>();
-			shipstats = other.collider.GetComponent<ShipStats>();
+			shipstats = other.collider.GetComponent<PlayerShipStats>();
 			Debug.Log("Shipstats: " + shipstats.name);
 			shipstats.decreaseHealth(bulletstats.getDamage() * (1 - (shipstats.getArmor() - bulletstats.getArmorPen())));
 			Debug.Log(shipstats.gameObject);
@@ -20,6 +20,4 @@ public class ProjectileHit : MonoBehaviour {
 		}
 		
 	}
-	
-	
 }

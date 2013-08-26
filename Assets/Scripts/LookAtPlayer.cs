@@ -5,10 +5,10 @@ public class LookAtPlayer : MonoBehaviour {
 
 	private GameObject player;
 	private Transform playertransf;
-	private Transform frontlook;
+	//private Transform lookahead;
 	
 	void Start (){
-		frontlook = transform;	
+		//lookahead = transform;	
 		player = GameObject.FindWithTag("Player");
 		playertransf = player.GetComponent<Transform>();
 		transform.LookAt(playertransf);
