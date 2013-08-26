@@ -8,7 +8,7 @@ public class PlayerShipStats : MonoBehaviour {
 	
 	
 	public PlayerShipStats (){
-		health = 50;
+		health = 10;
 		armor = 0;
 		
 	}

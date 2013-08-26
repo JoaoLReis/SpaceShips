@@ -21,8 +21,8 @@ public class ThreeRoundBurst : MonoBehaviour {
 		
 		if(actualtime > timer + attackspeed){
 			FireWeapon();
-			Invoke ("FireWeapon", 0.1f);
 			Invoke ("FireWeapon", 0.2f);
+			Invoke ("FireWeapon", 0.4f);
 			timer = actualtime;
 		}
 		

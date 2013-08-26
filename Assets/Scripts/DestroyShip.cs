@@ -8,7 +8,7 @@ public class DestroyShip : MonoBehaviour {
 	
 	// Use this for initialization
 	void Start () {
-		Destroy(gameObject, 20);
+		Destroy(gameObject, 30);
 		shipstats = GetComponent<ShipStats>();
 		deathanim = (GameObject) Resources.Load("DeathAnimation");
 	}
