@@ -53,6 +53,7 @@
      <Compile Include="Assets\OtherProject\TargetMouse.cs" />
      <Compile Include="Assets\Scripts\AdvanceLevel.cs" />
      <Compile Include="Assets\Scripts\AmmoChange.cs" />
+     <Compile Include="Assets\Scripts\BasicLaser.cs" />
      <Compile Include="Assets\Scripts\BasicShipMovement.cs" />
      <Compile Include="Assets\Scripts\BasicShipStats.cs" />
      <Compile Include="Assets\Scripts\BulletStats.cs" />
@@ -64,8 +65,10 @@
      <Compile Include="Assets\Scripts\EnemyProjectileHit.cs" />
      <Compile Include="Assets\Scripts\LookAtPlayer.cs" />
      <Compile Include="Assets\Scripts\MoveAround.cs" />
+     <Compile Include="Assets\Scripts\Moveforward.cs" />
      <Compile Include="Assets\Scripts\PlayerInfo.cs" />
      <Compile Include="Assets\Scripts\PlayerInventory.cs" />
+     <Compile Include="Assets\Scripts\PlayerLaser.cs" />
      <Compile Include="Assets\Scripts\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\PlayerShipStats.cs" />
      <Compile Include="Assets\Scripts\ProjectileHit.cs" />
@@ -73,11 +76,10 @@
      <Compile Include="Assets\Scripts\ShipStats.cs" />
      <Compile Include="Assets\Scripts\ShootBasicShipTurret.cs" />
      <Compile Include="Assets\Scripts\ShootTurret.cs" />
+     <Compile Include="Assets\Scripts\SimpleBullet.cs" />
      <Compile Include="Assets\Scripts\SpawnEnemy.cs" />
      <Compile Include="Assets\Scripts\ThreeRoundBurst.cs" />
      <Compile Include="Assets\Scripts\Unused Scripts\MoveTurret.cs" />
-     <Compile Include="Assets\Scripts\Unused Scripts\Moveforward.cs" />
-     <Compile Include="Assets\Scripts\Unused Scripts\PlayerLaser.cs" />
      <Compile Include="Assets\Scripts\Unused Scripts\SetupGame.cs" />
      <Compile Include="Assets\Scripts\Unused Scripts\ShootAtPlayer.cs" />
      <Compile Include="Assets\Scripts\Unused Scripts\ThirdPerson.cs" />

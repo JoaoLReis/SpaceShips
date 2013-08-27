@@ -3,16 +3,13 @@ using System.Collections;
 
 public class BulletStats : MonoBehaviour {
 	
-	private float damage = 1f;
-	private float armorPen = 0f;
+	protected float damage = 0;
+	protected float armorPen = 0;
 	
-	public void increaseDamage(){
-		damage += 1f;
-	}
+	virtual public void increaseDamage(){}
 	
-	public void increaseArmorPen(){
-		armorPen += 0.1f;
-	}
+	virtual public void increaseArmorPen(){}
+	
 	public float getDamage(){
 		return damage;
 	}

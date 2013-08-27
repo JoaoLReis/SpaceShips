@@ -16,7 +16,7 @@ public class SpawnEnemy : MonoBehaviour {
 	void randomizeShip(){
 		
 		randomizer = Random.Range(0, 100);
-		if(randomizer <76){
+		if(randomizer <100){
 			ship = (GameObject) Resources.Load("BasicShip");
 			StartCoroutine(spawnBasicEnemy());
 		}
