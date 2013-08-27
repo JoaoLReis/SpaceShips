@@ -3,7 +3,7 @@ using System.Collections;
 
 public class ThreeRoundBurst : MonoBehaviour {
 	
-	public float attackspeed = 3.00f;
+	public float attackspeed = 3.50f;
 	public float timer = 0f;
 	private Transform barrelEnd;
 	private Rigidbody bulletPrefab;
