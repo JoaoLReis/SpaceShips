@@ -7,15 +7,11 @@ public class EnemyProjectileHit : MonoBehaviour {
 	private PlayerShipStats shipstats;
 	
 	void OnTriggerEnter (Collider other) {
-		Debug.Log("Collide");
+		Debug.Log(gameObject + " Collide with " + other.name);
 		if(other.CompareTag("Player")){
-			Debug.Log ("Player");
 			bulletstats = GetComponent<BulletStats>();
 			shipstats = other.collider.GetComponent<PlayerShipStats>();
-			Debug.Log("Shipstats: " + shipstats.name);
 			shipstats.decreaseHealth(bulletstats.getDamage() * (1 - (shipstats.getArmor() - bulletstats.getArmorPen())));
-			Debug.Log(shipstats.gameObject);
-			Debug.Log (bulletstats.getDamage() * (1 - (shipstats.getArmor() - bulletstats.getArmorPen())));
 			Destroy(gameObject);
 		}
 		

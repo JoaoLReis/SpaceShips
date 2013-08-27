@@ -4,7 +4,7 @@ using System.Collections;
 public class SecondShipStats : ShipStats {
 
 	public SecondShipStats(){
-		health = 6;		
+		health = 5;		
 		armor = 0.1f;
 	}
 	

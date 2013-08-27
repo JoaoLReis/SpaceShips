@@ -9,7 +9,6 @@ public class PlayerInfo : MonoBehaviour {
 	void Start(){
 		
 		stats = GameObject.FindWithTag("Player").GetComponent<PlayerShipStats>();
-		Debug.Log("Start");
 		
 	}
 	

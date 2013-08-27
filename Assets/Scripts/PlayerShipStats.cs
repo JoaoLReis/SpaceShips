@@ -22,7 +22,6 @@ public class PlayerShipStats : MonoBehaviour {
 	}
 	
 	public void decreaseHealth(float damage){
-		Debug.Log("Decrease" + damage);
 		health -= damage;		
 	}
 }

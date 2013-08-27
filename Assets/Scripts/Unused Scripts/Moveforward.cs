@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Moveforward : MonoBehaviour {
 	
-	public float movement = 35f;
+	public float movement = 40f;
 	private Vector3 dest;
 	// Use this for initialization
 	void Start () {

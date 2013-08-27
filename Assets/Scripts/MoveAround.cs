@@ -8,22 +8,14 @@ public class MoveAround : MonoBehaviour {
 	public Transform rightmarker;
 	public Transform upmarker;
 	
-	// Use this for initialization
-	void Start () {
-	
-		
-	}
-	
 	// Update is called once per frame
 	void Update () {
 		
 		bool downright = Input.GetKeyDown(KeyCode.D);
         bool heldright = Input.GetKey(KeyCode.D);
-       // bool upright = Input.GetKeyUp(KeyCode.D);
 		
 		bool downleft = Input.GetKeyDown(KeyCode.A);
         bool heldleft = Input.GetKey(KeyCode.A);
-       // bool upleft = Input.GetKeyUp(KeyCode.A);
 		
 		
 		if(downleft || heldleft){

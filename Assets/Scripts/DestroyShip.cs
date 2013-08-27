@@ -16,7 +16,7 @@ public class DestroyShip : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 	
-		if(shipstats.getHealth() < 0){
+		if(shipstats.getHealth() < 0.1){
 			GameObject death;
 			death = Instantiate(deathanim, transform.position, transform.rotation) as GameObject;
 			death.particleSystem.Play();

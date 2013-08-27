@@ -8,14 +8,9 @@ public class SpawnEnemy : MonoBehaviour {
 	
 	void Start () {
 		
-		for(int i = 0; i<181; i+=20){
+		for(int i = 5; i<186; i+=20){
 			Invoke("randomizeShip", i);			
 		}
-		
-	}
-	
-	void OnTriggerExit(Collider other) {
-			
 	}
 	
 	void randomizeShip(){
@@ -23,10 +18,26 @@ public class SpawnEnemy : MonoBehaviour {
 		randomizer = Random.Range(0, 100);
 		if(randomizer <76){
 			ship = (GameObject) Resources.Load("BasicShip");
+			StartCoroutine(spawnBasicEnemy());
 		}
 		else{
 			ship = (GameObject) Resources.Load("SecondShip");
+			spawnSecondShip();
 		}
+		
+	}
+	
+	IEnumerator spawnBasicEnemy(){
+		for(int i = 0; i<3;i++){
+			Instantiate(ship, transform.position, ship.transform.rotation);
+			yield return new WaitForSeconds(2);
+		}
+	}
+	
+	void spawnSecondShip(){
+			
 		Instantiate(ship, transform.position, ship.transform.rotation);
 	}
+	
+	
 }

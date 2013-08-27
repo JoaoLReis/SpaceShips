@@ -5,13 +5,9 @@ public class ThreeRoundBurst : MonoBehaviour {
 
 	public Rigidbody bulletPrefab;
     public Transform barrelEnd;
-	public float attackspeed = 2.00f;
+	public float attackspeed = 2.50f;
 	public float timer = 0f;
 	
-	// Use this for initialization
-	void Start () {
-	
-	}
 	
 	// Update is called once per frame
 	void Update () {
@@ -33,7 +29,7 @@ public class ThreeRoundBurst : MonoBehaviour {
             
 		Rigidbody bulletInstance;
         bulletInstance = Instantiate(bulletPrefab, barrelEnd.position, barrelEnd.rotation) as Rigidbody;
-        bulletInstance.AddForce(barrelEnd.forward * 5000);
+        bulletInstance.AddForce(barrelEnd.forward * 7500);
 		
 	}
 }

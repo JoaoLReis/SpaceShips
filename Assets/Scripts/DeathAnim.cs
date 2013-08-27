@@ -6,9 +6,7 @@ public class DeathAnim : MonoBehaviour {
 	private int x = 0;
 	public void anim(){
 		
-		float actualtime = Time.time + 1;
 		x = 1;
-		Debug.Log(actualtime);
 		Invoke("playps", 2);
 		Destroy(GetComponentInChildren<Light>(), 2);
 		
