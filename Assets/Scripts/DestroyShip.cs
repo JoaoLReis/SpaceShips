@@ -20,6 +20,7 @@ public class DestroyShip : MonoBehaviour {
 			GameObject death;
 			death = Instantiate(deathanim, transform.position, transform.rotation) as GameObject;
 			death.particleSystem.Play();
+			Destroy(death, 0.6f);
 			Destroy(gameObject);	
 		}
 		
