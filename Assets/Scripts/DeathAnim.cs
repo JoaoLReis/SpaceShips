@@ -8,9 +8,10 @@ public class DeathAnim : MonoBehaviour {
 		
 		x = 1;
 		Invoke("playps", 2);
-		Destroy(GetComponentInChildren<Light>(), 2);
+		Destroy(GetComponentInChildren<Light>().gameObject, 2);
 		
 		GetComponentInChildren<Light>().intensity = Mathf.Lerp(GetComponentInChildren<Light>().intensity, 8, Time.deltaTime);
+		GetComponentInChildren<Light>().gameObject.GetComponent<AudioSource>().Play();
 	}
 	
 	void playps(){
