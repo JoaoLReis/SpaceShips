@@ -17,6 +17,7 @@ public class DeathAnim : MonoBehaviour {
 		
 		x = 0;
 		GetComponentInChildren<ParticleSystem>().Play();
+		GetComponentInChildren<AudioSource>().Play();
 		
 	}
 	
