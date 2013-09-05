@@ -1,13 +1,15 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\DeathAnim.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\AdaptCameraToResolution.cs">
     <Files>
-      <File FileName="Assets\Scripts\DeathAnim.cs" Line="20" Column="48" />
+      <File FileName="Assets\Scripts\PlayerInfo.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\DeathAnim.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\SpawnEnemy.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\DestroyShip.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\ProjectileHit.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\EnemyProjectileHit.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\DestroyPlayer.cs" Line="1" Column="1" />
+      <File FileName="Assets\AdaptCameraToResolution.cs" Line="35" Column="71" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

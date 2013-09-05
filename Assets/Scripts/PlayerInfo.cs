@@ -16,7 +16,7 @@ public class PlayerInfo : MonoBehaviour {
 		
 		health = stats.getHealth();
 		
-		GUI.Box (new Rect(0, Screen.height - 50, 100, 25), "Health:" + health);
+		GUI.Box (new Rect(0, 0, 70, 25), "Health:" + health);
 		
 		
 	}
