@@ -5,6 +5,10 @@ public class StartMenu : MonoBehaviour {
 
 	public GUISkin _menuskin;
 	public GUIStyle _title;
+	public GUIStyle _nosoundbutton;
+	public GUIStyle _unmutebutton;
+	public GUIStyle _mutebutton;
+	public GUIStyle _soundbutton;
 	private Rect _creditwindow = new Rect((Screen.width*4)/5, Screen.height/10, Screen.width/5, (Screen.height*4)/5);
 	private bool _showcredits = false;
 	public Texture2D _mute;
@@ -22,11 +26,26 @@ public class StartMenu : MonoBehaviour {
 		GUI.Box(new Rect(0, (Screen.height*14)/15, Screen.width/4, Screen.height/15), "Game developed By", _menuskin.box);
 		
 		//The mute sound and music button
-		if(GUI.Button(new Rect((Screen.width*8/10), 0, Screen.width/20, Screen.height/20), new GUIContent(_unmute, "Click to mute"), _menuskin.button))
-			
+		if(GUI.Button(new Rect((Screen.width*8/10), 0, Screen.width/30, Screen.height/20), "", _mutebutton)){
+			if(audio.mute == false){	
+				audio.mute = true;
+				_mutebutton.normal.background = _mute;
+			}
+			else{ 
+				audio.mute = false;
+				_mutebutton.normal.background = _unmute;
+			}
+		}
 		
-		//if(GUI.Button(new Rect((Screen.width*17/20), 0, Screen.width/20, Screen.height/20), new GUIContent(_sound, "Click to mute"), _menuskin.button))
-			
+		if(GUI.Button(new Rect((Screen.width*17/20), 0, Screen.width/30, Screen.height/20), "", _soundbutton))
+			if(audio.mute == false){	
+				audio.mute = true;
+				_soundbutton.normal.background = _nosound;
+			}
+			else{ 
+				audio.mute = false;
+				_soundbutton.normal.background = _sound;
+			}
 		
 		
 		
